@@ -20,7 +20,7 @@ console.log("\n");
   let n = 20;
   while(n<=30){
     console.log(n);
-    n++
+    n++;
   }
   console.log("\n");
 }
