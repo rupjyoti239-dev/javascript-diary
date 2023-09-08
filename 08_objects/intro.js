@@ -62,3 +62,14 @@
 
 
 
+
+// clone a object 
+
+const ob1 = {name: "rupjyoti" , age:23, address: "ghy"};
+// const obj2 = {...ob1};
+const obj2 = Object.assign({}, ob1)
+console.log(obj2);
+
+
+
+
