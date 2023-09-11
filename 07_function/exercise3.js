@@ -98,131 +98,131 @@ console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
 
  */
 
-// {
-//   const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+{
+  const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
   
-//   let name = readlineSync.question("Enter the color name: ");
-//   let unit = parseInt(readlineSync.question("Enter the quantity: "));
-//   const generateColors = (name,unit)=>{
+  let name = readlineSync.question("Enter the color name: ");
+  let unit = parseInt(readlineSync.question("Enter the quantity: "));
+  const generateColors = (name,unit)=>{
 
-//       let numOfColor = [];
-//       if(name === 'hexa'){   
-//         while(numOfColor.length<unit){
-//         let hex = [];
-//         while(hex.length<6){
-//           let num = Math.floor(Math.random()*array.length);
-//           hex.push(array[num]);
-//         }
-//         numOfColor.push(`#${hex.join("")}`);
-//         }
+      let numOfColor = [];
+      if(name === 'hexa'){   
+        while(numOfColor.length<unit){
+        let hex = [];
+        while(hex.length<6){
+          let num = Math.floor(Math.random()*array.length);
+          hex.push(array[num]);
+        }
+        numOfColor.push(`#${hex.join("")}`);
+        }
 
-//       }
-//       else if(name === 'rgb'){
-//         while(numOfColor.length<unit){
-//         let rgb = [];
-//         while(rgb.length<3){
-//           let num = Math.floor(Math.random()*255);
-//           rgb.push(num);
-//         }
-//          numOfColor.push(`rgb(${rgb})`);
-//       }
-//       }
-//       else{
-//         return `enter a valid color betwwn rgb and hexa`
-//       }
+      }
+      else if(name === 'rgb'){
+        while(numOfColor.length<unit){
+        let rgb = [];
+        while(rgb.length<3){
+          let num = Math.floor(Math.random()*255);
+          rgb.push(num);
+        }
+         numOfColor.push(`rgb(${rgb})`);
+      }
+      }
+      else{
+        return `enter a valid color betwwn rgb and hexa`
+      }
 
-//       return numOfColor
-//   }
-//   console.log(generateColors(name,unit));
-// }
+      return numOfColor
+  }
+  console.log(generateColors(name,unit));
+}
 
 
 
 
 // Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
-// {
-//    const shuffleArray = (ar)=>{
-//     let newAr = [];
-//     while(newAr.length<ar.length){
-//       let num = Math.floor(Math.random()*ar.length);
-//       if(!(newAr.includes(ar[num]))){
-//         newAr.push(ar[num]);
-//       }
+{
+   const shuffleArray = (ar)=>{
+    let newAr = [];
+    while(newAr.length<ar.length){
+      let num = Math.floor(Math.random()*ar.length);
+      if(!(newAr.includes(ar[num]))){
+        newAr.push(ar[num]);
+      }
       
-//     }
-//     return newAr;
-//    }
+    }
+    return newAr;
+   }
 
-//    console.log(shuffleArray([1,23,4,5,6]));
-// }
+   console.log(shuffleArray([1,23,4,5,6]));
+}
 
 
 
 
 // Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
-// {
-//   const factorial = (num)=>{
-//     let result = 1;
-//     for(let i=num;i>0;i--){
-//       result *=i;
-//     }
-//     return result;
-//   }
+{
+  const factorial = (num)=>{
+    let result = 1;
+    for(let i=num;i>0;i--){
+      result *=i;
+    }
+    return result;
+  }
 
-//   console.log(factorial(4));
-// }
+  console.log(factorial(4));
+}
 
 
 
 
 // Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
-// {
-//   const sumOfArrayItems = (ar)=>{
+{
+  const sumOfArrayItems = (ar)=>{
    
-//   const res = ar.every((num)=>{
-//     return typeof num === 'number';
-//   });
+  const res = ar.every((num)=>{
+    return typeof num === 'number';
+  });
 
-//   if(res){
-//     let sum = 0;
-//     for(let x of ar){
-//       sum += x;
-//     }
-//     return sum;
-//   }
-//   else{
-//     return `all elements are not number`
-//   }
+  if(res){
+    let sum = 0;
+    for(let x of ar){
+      sum += x;
+    }
+    return sum;
+  }
+  else{
+    return `all elements are not number`
+  }
    
    
-//   }
+  }
 
-//   console.log(sumOfArrayItems([1,2,'s',3]));
-// }
+  console.log(sumOfArrayItems([1,2,'s',3]));
+}
 
 
 // Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
-// {
-//   const average = (ar)=>{
+{
+  const average = (ar)=>{
 
-//     const res = ar.every((num)=>{
-//       return typeof num === 'number'
-//     })
+    const res = ar.every((num)=>{
+      return typeof num === 'number'
+    })
     
-//     let sum =0;
-//     let  avg = 0;
-//     if(res){
-//       for(let x of ar){
-//         sum = sum + x;
-//       }
-//     }
-//     avg = sum/ar.length;
-//    return avg
+    let sum =0;
+    let  avg = 0;
+    if(res){
+      for(let x of ar){
+        sum = sum + x;
+      }
+    }
+    avg = sum/ar.length;
+   return avg
    
-//   }
+  }
 
-//   console.log(average([1,2,3,4,5])); 
-// }
+  console.log(average([1,2,3,4,5])); 
+}
 
 
 
