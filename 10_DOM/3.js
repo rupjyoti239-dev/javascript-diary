@@ -1,4 +1,4 @@
-// getElementsByClassName returns a HTMLCollection[], we cannot use any loop (forEch,for) and map function on HTMLCollection so we have to convert it into array
+// getElementsByClassName returns a HTMLCollection[], we cannot use forEach loop and map function on HTMLCollection so we have to convert it into array
 let list3 = document.getElementsByClassName('list-item')
 
 
